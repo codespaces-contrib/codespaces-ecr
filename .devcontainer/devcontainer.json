@@ -1,0 +1,7 @@
+{
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:0-bullseye",
+
+	"initializeCommand": "bash .devcontainer/ecr-login.sh",
+
+	// "remoteUser": "vscode",
+}
