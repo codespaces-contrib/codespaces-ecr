@@ -1,5 +1,6 @@
 {
-	"image": "mcr.microsoft.com/vscode/devcontainers/base:0-bullseye",
+	//"image": "mcr.microsoft.com/vscode/devcontainers/base:0-bullseye",
+	"image": "711005317894.dkr.ecr.us-east-2.amazonaws.com/vscode/devcontainers/base:0-bullseye",
 
 	"initializeCommand": "bash .devcontainer/ecr-login.sh",
 
