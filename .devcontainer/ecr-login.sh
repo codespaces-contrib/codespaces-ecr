@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set +e
 
 echo "(*) Starting login at $(date)"
 
@@ -40,3 +40,4 @@ aws ecr get-login-password --region ${region} | \
 
 echo "(*) Logged in at $(date)"
 
+exit 0
