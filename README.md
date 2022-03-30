@@ -1,3 +1,9 @@
+# This workaround is no longer required!
+
+See https://docs.github.com/en/codespaces/codespaces-reference/allowing-your-codespace-to-access-a-private-image-registry#accessing-aws-elastic-container-registry
+
+----
+
 # GitHub Codespaces using images from Amazon Elastic Container Registry
 
 While GitHub Codespaces supports using secrets as a way to log into private container image registries, Amazon Elastic Container Registry only supports 12 hour access tokens when using the `aws ecr get-password` command. Adding this generated password to a Codespaces secret is therefore cumbersome and impractical. This sample works around this problem by using `initializeCommand` in `devcontainer.json` to fire the AWS CLI command whenever a codespace is created instead. This allows the custom dev containers to be created that rely on images private repositories in ECR.
